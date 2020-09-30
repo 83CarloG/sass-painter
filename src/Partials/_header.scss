@@ -25,14 +25,64 @@
 	}
 	&__text {
 		margin-left: 8px;
-		font-size: 0.90em;
+		font-size: 0.75em;
+		&:hover {
+			text-decoration: underline;
+			color: #fff;
+		}
 	}
-
-
+	&__select {
+		width: 71px;
+	}
 }
-// Nav-top
-
+// Nav-bottom
 .nav-bottom {
 	height: 50%;
-	background-color: blue;
+	@include my-display-flex (row, flex-start, center);
+	margin-top: 16px;
+	// Logo
+	.logo {
+		width: 120px;
+		height: 50px;
+		padding: 8px 15px;
+		&__img {
+			width: 100%;
+		}
+	}
+	// Nav-bottom list of item
+	&__list {
+		@include my-display-flex (row, space-between, center);
+		list-style: none;
+	}
+	&__item {
+		height: 50px;
+		color: white;
+		padding: 15px 25px;
+		// TODO: hover corretto
+		// &:hover {
+		// 	background-color: white;
+		// }
+		&--dropdown {
+			@extend .nav-bottom__item;
+		}
+	}
+	&__icon {
+		color: #7f6c47;
+		vertical-align: middle;
+		font-size: 0.90em;
+		margin-left: 5px;
+	}
+	&__link {
+		text-decoration: none;
+		color: #fff;
+	}
+}
+// hero
+.hero {
+	height: 460px;
+	background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+	padding-top: 20px;
 }

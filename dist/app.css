@@ -11,7 +11,7 @@ html {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .header {
@@ -49,11 +49,70 @@ html {
 
 .nav-top__text {
   margin-left: 8px;
-  font-size: 0.9em;
+  font-size: 0.75em;
+}
+
+.nav-top__text:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.nav-top__select {
+  width: 71px;
 }
 
 .nav-bottom {
   height: 50%;
-  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.nav-bottom .logo {
+  width: 120px;
+  height: 50px;
+  padding: 8px 15px;
+}
+
+.nav-bottom .logo__img {
+  width: 100%;
+}
+
+.nav-bottom__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-bottom__item,
+.nav-bottom__item--dropdown {
+  height: 50px;
+  color: white;
+  padding: 15px 25px;
+}
+
+.nav-bottom__icon {
+  color: #7f6c47;
+  vertical-align: middle;
+  font-size: 0.9em;
+  margin-left: 5px;
+}
+
+.nav-bottom__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero {
+  height: 460px;
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  padding-top: 20px;
 }
 
