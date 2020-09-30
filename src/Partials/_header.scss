@@ -1,0 +1,25 @@
+.header {
+	width: 100%;
+	height: 95px;
+	background-color: #000;
+}
+// Nav-top
+.nav-top {
+	height: 50%;
+	background-color: yellow;
+
+	&__list {
+		@include my-display-flex (row, flex-end, center);
+		list-style: none;
+	}
+	&__item {
+		margin-right: 5px;
+	}
+
+}
+// Nav-top
+
+.nav-bottom {
+	height: 50%;
+	background-color: blue;
+}
