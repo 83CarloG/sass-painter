@@ -1,0 +1,32 @@
+// Nav-top
+.nav-top {
+	height: 50%;
+	padding-top: 10px;
+
+	&__list {
+		@include my-display-flex (row, flex-end, center);
+		list-style: none;
+	}
+	&__item {
+		margin-right: 20px;
+	}
+	&__icon {
+		color: #009ce8;
+		vertical-align: middle;
+	}
+	&__link {
+		color: #939393;
+		text-decoration: none;
+	}
+	&__text {
+		margin-left: 8px;
+		font-size: 0.75em;
+		&:hover {
+			text-decoration: underline;
+			color: #fff;
+		}
+	}
+	&__select {
+		width: 71px;
+	}
+}
