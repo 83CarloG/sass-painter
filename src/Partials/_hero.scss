@@ -1,0 +1,31 @@
+// hero
+.hero {
+	position: relative;
+	height: 460px;
+	width: 100%;
+	background-image: url(../img/hero-painteressentials-7.jpg);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+	padding-top: 20px;
+}
+// Product features
+.product-features {
+	width: 520px;
+	height: 356px;
+	border: 1px solid red;
+	@include my-display-absolute(45%, 25.7%, none, none);
+	transform: translate(-50% , -50%);
+	padding: 0px 20px;
+}
+// Product shop
+.product-shop {
+	width: 400px;
+	height: 440px;
+	background-color: #000;
+	@include my-display-absolute(none, 18.2%, 0, none);
+	color: #fff;
+	&__title {
+		font-size: 1.75em;
+	}
+}
