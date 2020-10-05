@@ -1,31 +1,51 @@
 // hero
 .hero {
-	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 460px;
 	width: 100%;
 	background-image: url(../img/hero-painteressentials-7.jpg);
 	background-repeat: no-repeat;
 	background-position: 50%;
 	background-size: cover;
-	padding-top: 20px;
+	padding: 20px, 20px, auto, 20px;
+}
+.hero__wrap {
+	display: flex;
+	justify-content: flex-end;
+	width: 1080px;
 }
 // Product features
 .product-features {
-	width: 520px;
+	max-width: 520px;
 	height: 356px;
+	margin: 10px;
 	border: 1px solid red;
-	@include my-display-absolute(45%, 25.7%, none, none);
-	transform: translate(-50% , -50%);
 	padding: 0px 20px;
+	background-color:inherit;
+	color: #fff8c1;
+	&__title {
+		font-size: 1.5em;
+	}
+	&__list {
+		line-height: 1.5;
+		list-style: none;
+	}
+
 }
 // Product shop
-.product-shop {
-	width: 400px;
-	height: 440px;
+.pricebrick {
+	min-height: 400px;
+	width: 440px;
+	margin: 10px;
 	background-color: #000;
-	@include my-display-absolute(none, 18.2%, 0, none);
 	color: #fff;
 	&__title {
 		font-size: 1.75em;
 	}
 }
+// @media screen and (max-width: 768px) {
+// 	//// TODO: @media
+// }
