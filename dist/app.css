@@ -18,7 +18,7 @@ html {
 
 .header {
   width: 100%;
-  background-color: #000;
+  background-color: #101010;
 }
 
 @media screen and (max-width: 768px) {
@@ -35,12 +35,13 @@ html {
   flex-wrap: wrap;
 }
 .nav-bottom .logo {
-  width: 120px;
+  width: 110px;
   height: 50px;
-  padding: 8px 15px;
+  padding: 9px;
 }
 .nav-bottom .logo__img {
   width: 100%;
+  padding-left: 10px;
 }
 .nav-bottom__list {
   display: flex;
@@ -49,6 +50,7 @@ html {
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
+  padding-bottom: 5px;
 }
 .nav-bottom__item, .nav-bottom__item--dropdown {
   height: 50px;
@@ -65,10 +67,12 @@ html {
   text-decoration: none;
   color: #fff;
 }
+.nav-bottom__text {
+  font-size: 0.9em;
+}
 
 .nav-top {
   height: 50%;
-  padding-top: 10px;
 }
 .nav-top__list {
   display: flex;
@@ -80,15 +84,21 @@ html {
 .nav-top__item {
   margin-right: 20px;
 }
+.nav-top__item--select {
+  padding-top: 10px;
+  width: 90px;
+}
 .nav-top__icon {
   color: #009ce8;
   vertical-align: middle;
+  font-size: 14px;
 }
 .nav-top__link {
   color: #939393;
   text-decoration: none;
 }
 .nav-top__text {
+  padding-bottom: 10px;
   margin-left: 8px;
   font-size: 0.75em;
 }
@@ -97,46 +107,8 @@ html {
   color: #fff;
 }
 .nav-top__select {
-  width: 71px;
-}
-
-.hero {
-  position: relative;
-  height: 460px;
   width: 100%;
-  background-image: url(../img/hero-painteressentials-7.jpg);
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
-  padding-top: 20px;
-}
-
-.product-features {
-  width: 520px;
-  height: 356px;
-  border: 1px solid red;
-  position: absolute;
-  top: 45%;
-  right: 25.7%;
-  bottom: none;
-  left: none;
-  transform: translate(-50%, -50%);
-  padding: 0px 20px;
-}
-
-.product-shop {
-  width: 400px;
-  height: 440px;
-  background-color: #000;
-  position: absolute;
-  top: none;
-  right: 18.2%;
-  bottom: 0;
-  left: none;
-  color: #fff;
-}
-.product-shop__title {
-  font-size: 1.75em;
+  font-size: 13px;
 }
 
 .menu-mobile {
@@ -180,4 +152,50 @@ html {
     align-items: center;
     position: relative;
   }
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 460px;
+  width: 100%;
+  background-image: url(../img/hero-painteressentials-7.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  padding: 20px, 20px, auto, 20px;
+}
+
+.hero__wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 1080px;
+}
+
+.product-features {
+  max-width: 520px;
+  height: 356px;
+  margin: 10px;
+  border: 1px solid red;
+  padding: 0px 20px;
+  background-color: inherit;
+  color: #fff8c1;
+}
+.product-features__title {
+  font-size: 1.5em;
+}
+.product-features__list {
+  line-height: 1.5;
+  list-style: none;
+}
+
+.pricebrick {
+  min-height: 400px;
+  width: 440px;
+  margin: 10px;
+  background-color: #000;
+  color: #fff;
+}
+.pricebrick__title {
+  font-size: 1.75em;
 }

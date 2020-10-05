@@ -1,7 +1,7 @@
 // Nav-top
 .nav-top {
 	height: 50%;
-	padding-top: 10px;
+
 
 	&__list {
 		@include my-display-flex (row, flex-end, center);
@@ -9,16 +9,22 @@
 	}
 	&__item {
 		margin-right: 20px;
+		&--select {
+			padding-top: 10px;
+			width: 90px;
+		}
 	}
 	&__icon {
 		color: #009ce8;
 		vertical-align: middle;
+		font-size: 14px;
 	}
 	&__link {
 		color: #939393;
 		text-decoration: none;
 	}
 	&__text {
+		padding-bottom: 10px;
 		margin-left: 8px;
 		font-size: 0.75em;
 		&:hover {
@@ -27,6 +33,7 @@
 		}
 	}
 	&__select {
-		width: 71px;
+		width: 100%;
+		font-size: 13px;
 	}
 }
